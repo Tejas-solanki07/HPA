@@ -1,6 +1,6 @@
 # Horizontal Pod Scalling 
 
-## Creaete a Deployment file from github repo:
+## Create a Deployment file from github repo:
 
 ```bash 
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.7.2/components.yaml
@@ -68,7 +68,7 @@ kubectl describe hpa
 kubectl run load-generator --image=busybox:1.28 --restart=Never -- sh -c 'while true; do wget -q -O- http://mynginx; done'
 ```
 
-## Check the load is incresing on the pods open second terminal run command:
+## Check the load is incresing on the pods open second terminal run command: 
 
 ```bash
 kubectl get hpa 
